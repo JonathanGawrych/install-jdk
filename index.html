@@ -1,0 +1,127 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div id="banner">
+			<div class="logo">
+				<img src="images/logo.jpg" class="logo-image" />
+				Utopic Unicorn
+			</div>
+		</div>
+	</header>
+
+	<div class="content">
+		<h1>Installing the JDK and running your first program.</h1>
+
+		<nav id="sidebar">
+			<ol>
+				<li>Open IE</li>
+				<li>Accept Agreement</li>
+				<li>Download</li>
+				<li>Run Download</li>
+				<li>UAC</li>
+				<li>Setup</li>
+				<li>Setup Finished</li>
+				<li>Notepade</li>
+				<li>Code</li>
+				<li>Saving</li>
+				<li>CMD</li>
+				<li>Compile</li>
+				<li>Run</li>
+				<li>Result</li>
+			</li>
+		</nav><!--
+
+	 --><main>
+			<section class="warning fa fa-warning">
+				<h3 class="requirements">What you need</h3>
+				<ul>
+					<li>Computer with windows 7</li>
+					<li>An internet connection</li>
+					<li>Administrative privileges</li>
+				</ul>
+			</section>
+
+			<ol>
+				<li>Open web browser "Internet Explorer"</li>
+				<li>
+					<img src="images/follow-link.png" />
+					Go to the url <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR">http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR</a>
+				</li>
+				<li>
+					<img src="images/accept-agreement.png" />
+					Click "accept license agreement" under  Java SE Development Kit 8u25 section
+				</li>
+				<li>Click on jdk-8u25-windows-i586.exe for Windows x86</li>
+				<li>
+					A download box will appear saying if you want to run or save. Click run.
+					<div class="danger fa fa-warning">
+						<img src="images/admin-required.png" />
+						If you see this image, you do not have the required administrator privileges 
+					</div>
+				</li>
+				<li>
+					<img src="images/uac-warning.png" />
+					The uac warning will appear. Click "yes" to allow the program.
+				</li>
+				<li>
+					<img src="images/setup.png" />
+					A setup window will appear. click the "next" button twice in the setup window. Click "next" for the destination as well</li>
+				</li>
+				<li>
+					<img src="images/setup-finished.png" />
+					Once the installer is finished, close the installer
+				</li>
+				<li>
+					<img src="images/run-notepad.png" />
+					Open Notepad by hitting the "windows key" on your keyboard with "r" type "notepad" click "ok".
+				</li>
+				<li>
+					<img src="images/copy-code.png" />
+					Copy the following code:
+					<code>
+						class HelloWorld{
+							public static void main(String args[]) {
+								System.out.println("Hello World!");
+							}
+						}
+					</code>
+				</li>
+				<li>
+					<img src="images/save-file.png" />
+					Save the file to the desktop as HelloWorld.java.
+					<div class="warning fa fa-warning">
+						When saving make sure the option for "save as type" is set to "all files"
+					</div>
+				</li>
+				<li>Open command prompt by holding shift and right click on the Desktop. Click open command window here.</li>
+				<li>
+					<img src="images/compile-code.png" />
+					Run the command
+						<code>
+							"C:\Program Files (x86)\Java\jdk1.8.0_25\bin\javac" HelloWorld.java
+						</code>
+					to compile the code
+				</li>
+				<li>
+					<img src="images/run-code.png" />
+					Run the command
+					<code>
+						"C:\Program Files (x86)\Java\jdk1.8.0_25\bin\java" HelloWorld
+					</code>
+					to run the code
+				</li>
+			</ol>
+			<img src="images/end-result.png" />
+			<p>The end result should be a single line in the terminal that says <code>Hello World!</code></p>
+			<p>Say hello back!</p>
+		</main>
+	</div>
+
+	<footer>v0.0.0-1</footer>
+</body>
+</html>

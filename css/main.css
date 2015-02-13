@@ -1,0 +1,104 @@
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("../images/linen.png");
+}
+
+.content {
+	min-width: 960px;
+	width: 75%;
+	overflow: hidden;
+
+	margin: auto;
+	border-left: 1px dotted #ccc;
+	border-right: 1px dotted #ccc;
+
+	background-color: #fefefe;
+	padding: 0 20px;
+}
+
+#sidebar {
+	width: 15%;
+	display: inline-block;
+}
+
+main {
+	width: 85%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.danger, .warning {
+	border-width: 2.5px;
+	border-style: dashed;
+	border-radius: 7.5px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.danger {
+	color: #d8000c;
+	background-color: #ffbaba;
+}
+
+.warning {
+	color: #9f6000;
+	background-color: #feefb3;
+}
+
+.requirements {
+	display: inline-block;
+	margin: 0.5em;
+}
+
+.logo-image {
+	height: 100px;
+	vertical-align: top;
+}
+
+header {
+	width: 100%;
+	background-color: #801515;
+	color: #fff;
+	height: 160px;
+	overflow: hidden;
+}
+
+#banner {
+	margin-top: 25px;
+	background-color: #aa3939;
+	font-size: 5em;
+}
+
+.logo {
+	min-width: 960px;
+	width: 75%;
+	overflow: hidden;
+
+	margin: auto;
+}
+
+li {
+	list-style-type: none;
+	list-style-image: none;
+}
+
+nav ol {
+	padding-left: 0.5em;
+	width: 75%;
+}
+
+nav li {
+	border-top: 1px solid #ccc;
+	font-size: 1.5em;
+}
