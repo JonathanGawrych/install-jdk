@@ -88,6 +88,14 @@ header {
 	margin: auto;
 }
 
+
+
+/* enforce background enheritance from content to li */
+main             { background-color: inherit; }
+main ol.steps    { background-color: inherit; }
+main ol.steps li { background-color: inherit; }
+
+
 li {
 	list-style-type: none;
 	list-style-image: none;
@@ -100,17 +108,92 @@ nav ol {
 
 nav li {
 	border-top: 1px solid #ccc;
-	font-size: 1.5em;
+	font-size: 1.1em;
+}
+
+ol.steps {
+	position: relative;
+	width: 85%;
+	height: 25em;
+	margin: auto;
 }
 
 .steps img {
+	display: block;
 	width: 75%;
+	margin: auto;
 }
 
-.steps input[type="checkbox"] + li {
+.steps input[type="checkbox"] + * + li {
 	display: none;
 }
 
-.steps input[type="checkbox"]:checked + li {
+.steps input[type="checkbox"]:checked + * +  li {
 	display: block;
 }
+
+.steps input[type="checkbox"] {
+	max-width: 0;
+	max-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.steps label {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+	-webkit-touch-callout: none;
+	  -webkit-user-select: none;
+	   -khtml-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	          user-select: none;
+}
+
+.steps input[type="checkbox"]:not(:checked) + label {
+	right: 0;
+}
+
+.steps input[type="checkbox"]:checked + label {
+	left: 0;
+}
+
+.steps label:before {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+
+	color: #555;
+	content: "\00bb";
+	font-size: 3em;
+	text-align: center;
+
+	width: 1em;
+	height: 0.707em;
+	line-height: 0.5em;
+
+	background: #e5e5e5;
+	border: 1px solid #999999;
+
+	cursor: pointer;
+}
+
+.steps input[type="checkbox"]:checked + label:before {
+	content: "\00ab";
+}
+
+.steps li {
+	position: absolute;
+	top: 0;
+	left: 4em;
+	bottom: 0;
+	right: 4em;
+}
+
+/* Z-index rise the label, and the next label */
+.steps input[type="checkbox"]:checked + label             { z-index: 10; }
+.steps input[type="checkbox"]:checked + * + * + * + label { z-index: 10; }

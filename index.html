@@ -47,25 +47,32 @@
 			</section>
 
 			<ol class="steps">
-				<input type="checkbox" />
+				<div class="test"></div>
+
+				<input  id="step1" type="checkbox" checked="checked" disabled="disabled" />
+				<label for="step1"></label>
 				<li>Open web browser "Internet Explorer"</li>
 
-				<input type="checkbox" />
+				<input  id="step2" type="checkbox" />
+				<label for="step2"></label>
 				<li>
 					<img src="images/follow-link.png" />
 					Go to the url <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR">http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR</a>
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step3" type="checkbox" />
+				<label for="step3"></label>
 				<li>
 					<img src="images/accept-agreement.png" />
 					Click "accept license agreement" under  Java SE Development Kit 8u25 section
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step4" type="checkbox" />
+				<label for="step4"></label>
 				<li>Click on jdk-8u25-windows-i586.exe for Windows x86</li>
 
-				<input type="checkbox" />
+				<input  id="step5" type="checkbox" />
+				<label for="step5"></label>
 				<li>
 					A download box will appear saying if you want to run or save. Click run.
 					<div class="danger fa fa-warning">
@@ -74,31 +81,36 @@
 					</div>
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step6" type="checkbox" />
+				<label for="step6"></label>
 				<li>
 					<img src="images/uac-warning.png" />
 					The uac warning will appear. Click "yes" to allow the program.
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step7" type="checkbox" />
+				<label for="step7"></label>
 				<li>
 					<img src="images/setup.png" />
 					A setup window will appear. click the "next" button twice in the setup window. Click "next" for the destination as well</li>
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step8" type="checkbox" />
+				<label for="step8"></label>
 				<li>
 					<img src="images/setup-finished.png" />
 					Once the installer is finished, close the installer
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step9" type="checkbox" />
+				<label for="step9"></label>
 				<li>
 					<img src="images/run-notepad.png" />
 					Open Notepad by hitting the "windows key" on your keyboard with "r" type "notepad" click "ok".
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step10" type="checkbox" />
+				<label for="step10"></label>
 				<li>
 					<img src="images/copy-code.png" />
 					Copy the following code:
@@ -111,7 +123,8 @@
 					</code>
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step11" type="checkbox" />
+				<label for="step11"></label>
 				<li>
 					<img src="images/save-file.png" />
 					Save the file to the desktop as HelloWorld.java.
@@ -120,10 +133,12 @@
 					</div>
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step12" type="checkbox" />
+				<label for="step12"></label>
 				<li>Open command prompt by holding shift and right click on the Desktop. Click open command window here.</li>
 
-				<input type="checkbox" />
+				<input  id="step13" type="checkbox" />
+				<label for="step13"></label>
 				<li>
 					<img src="images/compile-code.png" />
 					Run the command
@@ -133,7 +148,8 @@
 					to compile the code
 				</li>
 
-				<input type="checkbox" />
+				<input  id="step14" type="checkbox" />
+				<label for="step14"></label>
 				<li>
 					<img src="images/run-code.png" />
 					Run the command
@@ -142,6 +158,9 @@
 					</code>
 					to run the code
 				</li>
+
+				<input  id="step15" type="checkbox" disabled="disabled" />
+				<label for="step15"></label>
 			</ol>
 			<img src="images/end-result.png" />
 			<p>The end result should be a single line in the terminal that says <code>Hello World!</code></p>
@@ -149,6 +168,6 @@
 		</main>
 	</div>
 
-	<footer>v0.0.0-2</footer>
+	<footer>v0.0.0-3</footer>
 </body>
 </html>
