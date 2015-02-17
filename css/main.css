@@ -132,15 +132,18 @@ ol.steps {
 }
 
 .steps input[type="radio"] + * + li {
-	display: none;
+	transform: translate(-150%, 0);
+	transform: translate3D(-150%, 0, 0);
 }
 
 .steps input[type="radio"]:checked + * + li {
-	display: block;
+	transform: translate(0%, 0);
+	transform: translate3D(0%, 0, 0);
 }
 
 .steps input[type="radio"]:checked + * + * ~ li {
-	display: none;
+	transform: translate(150%, 0);
+	transform: translate3D(150%, 0, 0);
 }
 
 .steps input[type="radio"] {
@@ -217,6 +220,7 @@ ol.steps {
 	left: 4em;
 	bottom: 0;
 	right: 4em;
+	transition: all ease 1s;
 }
 
 /* Z-index rise the label, and the next label */
