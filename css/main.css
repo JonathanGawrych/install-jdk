@@ -17,6 +17,8 @@ body {
 .content {
 	min-width: 960px;
 	width: 75%;
+	max-width: 1280px;
+	min-height: calc(100% - 160px);
 	overflow: hidden;
 
 	margin: auto;
@@ -41,10 +43,15 @@ main {
 	width: 85%;
 	display: inline-block;
 	vertical-align: top;
+	padding-right: 1.5em;
 }
 
 aside {
 	float: right;
+}
+
+aside.warning {
+	margin-top: 0;
 }
 
 .danger, .warning {
@@ -114,12 +121,6 @@ footer {
 }
 
 
-/* enforce background enheritance from content to li */
-main             { background-color: inherit; }
-main ol.steps    { background-color: inherit; }
-main ol.steps li { background-color: inherit; }
-
-
 li {
 	list-style-type: none;
 	list-style-image: none;
@@ -127,7 +128,7 @@ li {
 
 nav ol {
 	padding-left: 0.5em;
-	width: 75%;
+	width: 88%;
 }
 
 nav li {
@@ -135,18 +136,40 @@ nav li {
 	font-size: 1.1em;
 }
 
+nav li:last-child {
+	border-bottom: 1px solid #ccc;
+}
+
+nav label {
+	display: block;
+	cursor: pointer;
+}
+
+nav label:hover {
+	font-weight: bold;
+}
+
 ol.steps {
 	position: relative;
-	width: 85%;
 	height: 25em;
-	margin: auto;
+	margin: 2em;
 	overflow: hidden;
+
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+ol.steps li {
+	background-color: inherit;
 }
 
 .steps img {
 	display: block;
-	width: 75%;
-	margin: auto;
+	max-height: 80%;
+	max-width: 80%;
+	margin: 1em auto;
 }
 
 .steps input[type="radio"] + * + li {
@@ -175,7 +198,7 @@ ol.steps {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	left: 1em;
 
 	-webkit-touch-callout: none;
 	  -webkit-user-select: none;
@@ -239,9 +262,20 @@ ol.steps {
 	bottom: 0;
 	right: 4em;
 	transition: all ease 1s;
+	text-align: center;
 }
 
 /* Z-index rise the label, and the next label */
 .steps input[type="radio"]                     + label { z-index: 5; }
 .steps input[type="radio"]:checked             + label { z-index: 10; }
 .steps input[type="radio"]:checked + * + * + * + label { z-index: 10; }
+
+pre {
+	text-align: left;
+	tab-size: 4;
+	display: inline-block;
+}
+
+.steps p {
+	margin: 0;	
+}

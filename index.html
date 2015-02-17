@@ -20,19 +20,20 @@
 		<nav id="sidebar">
 			<ol>
 				<li><label for="step1">Open IE</label></li>
-				<li><label for="step2">Accept Agreement</label></li>
-				<li><label for="step3">Download</label></li>
-				<li><label for="step4">Run Download</label></li>
-				<li><label for="step5">UAC</label></li>
-				<li><label for="step6">Setup</label></li>
-				<li><label for="step7">Setup Finished</label></li>
-				<li><label for="step8">Notepad</label></li>
-				<li><label for="step9">Code</label></li>
-				<li><label for="step10">Saving</label></li>
-				<li><label for="step11">CMD</label></li>
-				<li><label for="step12">Compile</label></li>
-				<li><label for="step13">Run</label></li>
-				<li><label for="step14">Result</label></li>
+				<li><label for="step2">Oracle Downloads</label></li>
+				<li><label for="step3">Accept Agreement</label></li>
+				<li><label for="step4">Start Download</label></li>
+				<li><label for="step5">Run Installer</label></li>
+				<li><label for="step6">UAC</label></li>
+				<li><label for="step7">Setup</label></li>
+				<li><label for="step8">Setup Finished</label></li>
+				<li><label for="step9">Notepad</label></li>
+				<li><label for="step10">Code</label></li>
+				<li><label for="step11">Saving</label></li>
+				<li><label for="step12">CMD</label></li>
+				<li><label for="step13">Compile</label></li>
+				<li><label for="step14">Run</label></li>
+				<li><label for="step15">Result</label></li>
 			</li>
 		</nav><!--
 
@@ -123,14 +124,14 @@
 				<label for="step10"></label>
 				<li>
 					<img src="images/copy-code.png" />
-					Copy the following code:
-					<code>
-						class HelloWorld{
-							public static void main(String args[]) {
-								System.out.println("Hello World!");
-							}
-						}
-					</code>
+					<p>Copy the following code into notepad:</p>
+<pre>
+class HelloWorld {
+	public static void main(String args[]) {
+		System.out.println("Hello World!");
+	}
+}
+</pre>
 				</li>
 
 				<input  id="step11" type="radio" name="step" />
@@ -169,15 +170,20 @@
 					to run the code
 				</li>
 
-				<input  id="step15" type="radio" name="step" disabled="disabled" />
+				<input  id="step15" type="radio" name="step" />
 				<label for="step15"></label>
+				<li>
+					<img src="images/end-result.png" />
+					<p>The end result should be a single line in the terminal that says <code>Hello World!</code></p>
+					<p>Say hello back!</p>
+				</li>
+
+				<input  id="step16" type="radio" name="step" disabled="disabled" />
+				<label for="step16"></label>
 			</ol>
-			<img src="images/end-result.png" />
-			<p>The end result should be a single line in the terminal that says <code>Hello World!</code></p>
-			<p>Say hello back!</p>
 		</main>
 	</div>
 
-	<footer>v0.0.0-12</footer>
+	<footer>v0.0.1</footer>
 </body>
 </html>
