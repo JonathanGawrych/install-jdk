@@ -195,8 +195,20 @@ ol.steps {
 	cursor: pointer;
 }
 
+.steps input[type="radio"]:hover + label:before {
+	background: #ccc;
+}
+
+.steps input[type="radio"]:active + label:before {
+	background: #aaa;
+}
+
 .steps input[type="radio"]:checked + * ~ label:before {
 	content: "\00bb";
+}
+
+.steps input[type="radio"]:disabled + label:before {
+	opacity: 0.6;
 }
 
 .steps li {
