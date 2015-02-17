@@ -122,6 +122,7 @@ ol.steps {
 	width: 85%;
 	height: 25em;
 	margin: auto;
+	overflow: hidden;
 }
 
 .steps img {
@@ -130,15 +131,19 @@ ol.steps {
 	margin: auto;
 }
 
-.steps input[type="checkbox"] + * + li {
+.steps input[type="radio"] + * + li {
 	display: none;
 }
 
-.steps input[type="checkbox"]:checked + * +  li {
+.steps input[type="radio"]:checked + * + li {
 	display: block;
 }
 
-.steps input[type="checkbox"] {
+.steps input[type="radio"]:checked + * + * ~ li {
+	display: none;
+}
+
+.steps input[type="radio"] {
 	max-width: 0;
 	max-height: 0;
 	margin: 0;
@@ -149,6 +154,7 @@ ol.steps {
 	position: absolute;
 	top: 0;
 	bottom: 0;
+	left: 0;
 
 	-webkit-touch-callout: none;
 	  -webkit-user-select: none;
@@ -158,12 +164,13 @@ ol.steps {
 	          user-select: none;
 }
 
-.steps input[type="checkbox"]:not(:checked) + label {
-	right: 0;
+.steps input[type="radio"]:checked + * ~ label {
+	right: 4em;
+	left: auto;
 }
 
-.steps input[type="checkbox"]:checked + label {
-	left: 0;
+.steps input[type="radio"]:checked + label {
+	display: none;
 }
 
 .steps label:before {
@@ -174,7 +181,7 @@ ol.steps {
 	margin: auto;
 
 	color: #555;
-	content: "\00bb";
+	content: "\00ab";
 	font-size: 3em;
 	text-align: center;
 
@@ -188,8 +195,8 @@ ol.steps {
 	cursor: pointer;
 }
 
-.steps input[type="checkbox"]:checked + label:before {
-	content: "\00ab";
+.steps input[type="radio"]:checked + * ~ label:before {
+	content: "\00bb";
 }
 
 .steps li {
@@ -201,5 +208,6 @@ ol.steps {
 }
 
 /* Z-index rise the label, and the next label */
-.steps input[type="checkbox"]:checked + label             { z-index: 10; }
-.steps input[type="checkbox"]:checked + * + * + * + label { z-index: 10; }
+.steps input[type="radio"]                     + label { z-index: 5; }
+.steps input[type="radio"]:checked             + label { z-index: 10; }
+.steps input[type="radio"]:checked + * + * + * + label { z-index: 10; }
