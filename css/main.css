@@ -262,6 +262,13 @@ ol.steps {
 	text-align: center;
 }
 
+.steps > li:before {
+	position: absolute;
+	top: 0.5em;
+	left: -3.5em;
+	content: attr(step) ":";
+}
+
 /* Z-index rise the label, and the next label */
 .steps input[type="radio"]                     + label { z-index: 5; }
 .steps input[type="radio"]:checked             + label { z-index: 10; }

@@ -27,14 +27,14 @@
 				<li><label for="step5">Run Installer</label></li>
 				<li><label for="step6">UAC</label></li>
 				<li><label for="step7">Setup</label></li>
-				<li><label for="step8">Setup Finished</label></li>
+				<li><label for="step8">Finish Setup</label></li>
 				<li><label for="step9">Notepad</label></li>
 				<li><label for="step10">Code</label></li>
 				<li><label for="step11">Saving</label></li>
 				<li><label for="step12">CMD</label></li>
 				<li><label for="step13">Compile</label></li>
 				<li><label for="step14">Run</label></li>
-				<li><label for="step15">Result</label></li>
+				<li><label for="step15">Results</label></li>
 			</li>
 		</nav><!--
 
@@ -56,7 +56,7 @@
 
 				<input  id="step0" type="radio" name="step" checked="checked" />
 				<label for="step0"></label>
-				<li class="guide-info">
+				<li class="guide-info" step="Guide Info">
 					<p>This guide will use text instructions and images to guide you though the process.</p>
 					<p class="warning fa fa-warning">Warnings are marked in a yellow box</p>
 					<p class="danger fa fa-warning">Potential Problems are marked in a red box</p>
@@ -73,7 +73,7 @@
 
 				<input  id="step1" type="radio" name="step" />
 				<label for="step1"></label>
-				<li>
+				<li step="1) Open IE">
 					<img src="images/open-ie.png" />
 					Open the web browser "Internet Explorer."
 					<aside class="warning fa fa-warning">
@@ -83,28 +83,28 @@
 
 				<input  id="step2" type="radio" name="step" />
 				<label for="step2"></label>
-				<li>
+				<li step="2) Oracle Downloads">
 					<img src="images/follow-link.png" />
 					Go to the url <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR">http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR</a>.
 				</li>
 
 				<input  id="step3" type="radio" name="step" />
 				<label for="step3"></label>
-				<li>
+				<li step="3) Accept Agreement">
 					<img src="images/accept-agreement.png" />
 					Click "Accept License Agreement" under  Java SE Development Kit 8u25 section.
 				</li>
 
 				<input  id="step4" type="radio" name="step" />
 				<label for="step4"></label>
-				<li>
+				<li step="4) Start Download">
 					<img src="images/download-link.png" />
 					Click on <code>jdk-8u25-windows-i586.exe</code> for Windows x86.
 				</li>
 
 				<input  id="step5" type="radio" name="step" />
 				<label for="step5"></label>
-				<li>
+				<li step="5) Run Installer">
 					<img src="images/run-download.png" />
 					A download box will appear at the bottom of Internet Explorer asking if you want to run or save this file. Click <b>Run</b>.
 					<div class="danger fa fa-warning">
@@ -115,28 +115,28 @@
 
 				<input  id="step6" type="radio" name="step" />
 				<label for="step6"></label>
-				<li>
+				<li step="6) UAC">
 					<img src="images/uac-warning.png" />
 					The User Account Control (UAC) warning will appear. Click "Yes" to continue the installation.
 				</li>
 
 				<input  id="step7" type="radio" name="step" />
 				<label for="step7"></label>
-				<li>
+				<li step="7) Setup">
 					<img src="images/setup.png" />
 					A setup window will appear. Click the "Next" button twice in the setup window. Click "Next" for the destination as well.</li>
 				</li>
 
 				<input  id="step8" type="radio" name="step" />
 				<label for="step8"></label>
-				<li>
+				<li step="8) Finish Setup">
 					<img src="images/setup-finished.png" />
 					Once the installer is finished, close the installer.
 				</li>
 
 				<input  id="step9" type="radio" name="step" />
 				<label for="step9"></label>
-				<li>
+				<li step="9) Notepad">
 					<img src="images/run-notepad.png" />
 					<p>Open Notepad by holding the "Windows key" on your keyboard, then pushing "R."</p>
 					<p>When the dialog box opens up, type <code>notepad</code> and then click "OK".</p>
@@ -144,7 +144,7 @@
 
 				<input  id="step10" type="radio" name="step" />
 				<label for="step10"></label>
-				<li>
+				<li step="10) Code">
 					<img src="images/copy-code.png" />
 					<p>Copy the following code into notepad:</p>
 <pre>
@@ -158,7 +158,7 @@ class HelloWorld {
 
 				<input  id="step11" type="radio" name="step" />
 				<label for="step11"></label>
-				<li>
+				<li step="11) Saving">
 					<img src="images/save-file.png" />
 					Save the file to the desktop as <code>HelloWorld.java</code>.
 					<div class="warning fa fa-warning">
@@ -169,14 +169,14 @@ class HelloWorld {
 
 				<input  id="step12" type="radio" name="step" />
 				<label for="step12"></label>
-				<li>
+				<li step="12) CMD">
 					<img src="images/open-cmd.png" />
 					Open command prompt by holding shift and right clicking on the Desktop. Click "Open command window here."
 				</li>
 
 				<input  id="step13" type="radio" name="step" />
 				<label for="step13"></label>
-				<li>
+				<li step="13) Compile">
 					<img src="images/compile-code.png" />
 					Run the command
 						<code>
@@ -187,7 +187,7 @@ class HelloWorld {
 
 				<input  id="step14" type="radio" name="step" />
 				<label for="step14"></label>
-				<li>
+				<li step="14) Run">
 					<img src="images/run-code.png" />
 					Run the command
 					<code>
@@ -198,7 +198,7 @@ class HelloWorld {
 
 				<input  id="step15" type="radio" name="step" />
 				<label for="step15"></label>
-				<li>
+				<li step="Results">
 					<img src="images/end-result.png" />
 					<p>The end result should be a single line in the terminal that says <code>Hello World!</code></p>
 					<p>Congratulations! You have create and ran your first program!</p>
@@ -210,6 +210,6 @@ class HelloWorld {
 		</main>
 	</div>
 
-	<footer>v0.1.0</footer>
+	<footer>v0.1.1</footer>
 </body>
 </html>
