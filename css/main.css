@@ -301,7 +301,7 @@ pre {
 
 code {
 	color: #555;
-	background-color: #f9f2f4;
+	background-color: rgba(125, 121, 122, 0.2);
 	white-space: nowrap;
 	border-radius: 4px;
 	tab-size: 4;
