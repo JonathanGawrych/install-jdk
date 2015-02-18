@@ -231,6 +231,7 @@ ol.steps {
 
 	background: #e5e5e5;
 	border: 1px solid #999999;
+	border-radius: 5px;
 
 	cursor: pointer;
 }
