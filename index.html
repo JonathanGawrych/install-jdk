@@ -57,7 +57,7 @@
 				<input  id="step0" type="radio" name="step" checked="checked" />
 				<label for="step0"></label>
 				<li class="guide-info">
-					<p>This guide will use images, as well as text instructions to guide you though the process.</p>
+					<p>This guide will use text instructions and images to guide you though the process.</p>
 					<p class="warning fa fa-warning">Warnings are marked in a yellow box</p>
 					<p class="danger fa fa-warning">Potential Problems are marked in a red box</p>
 					<p>Follow each step and navigate using the arrow buttons. You can also jump between steps using the navigation to the left.</p>
@@ -75,7 +75,7 @@
 				<label for="step1"></label>
 				<li>
 					<img src="images/open-ie.png" />
-					Open web browser "Internet Explorer"
+					Open the web browser "Internet Explorer."
 					<aside class="warning fa fa-warning">
 						You may use your own favorite browser, but the steps outline here may not match your browser
 					</aside>
@@ -85,30 +85,30 @@
 				<label for="step2"></label>
 				<li>
 					<img src="images/follow-link.png" />
-					Go to the url <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR">http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR</a>
+					Go to the url <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR">http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u25-oth-JPR</a>.
 				</li>
 
 				<input  id="step3" type="radio" name="step" />
 				<label for="step3"></label>
 				<li>
 					<img src="images/accept-agreement.png" />
-					Click "Accept License Agreement" under  Java SE Development Kit 8u25 section
+					Click "Accept License Agreement" under  Java SE Development Kit 8u25 section.
 				</li>
 
 				<input  id="step4" type="radio" name="step" />
 				<label for="step4"></label>
 				<li>
 					<img src="images/download-link.png" />
-					Click on jdk-8u25-windows-i586.exe for Windows x86
+					Click on <code>jdk-8u25-windows-i586.exe</code> for Windows x86.
 				</li>
 
 				<input  id="step5" type="radio" name="step" />
 				<label for="step5"></label>
 				<li>
 					<img src="images/run-download.png" />
-					A download box will appear saying if you want to run or save. Click run.
+					A download box will appear at the bottom of Internet Explorer asking if you want to run or save this file. Click <b>Run</b>.
 					<div class="danger fa fa-warning">
-						If you see this image, you do not have the required administrator privileges 
+						If you see this image, you do not have the required administrator privileges
 						<img src="images/admin-required.png" />
 					</div>
 				</li>
@@ -117,28 +117,29 @@
 				<label for="step6"></label>
 				<li>
 					<img src="images/uac-warning.png" />
-					The uac warning will appear. Click "yes" to allow the program.
+					The User Account Control (UAC) warning will appear. Click "Yes" to continue the installation.
 				</li>
 
 				<input  id="step7" type="radio" name="step" />
 				<label for="step7"></label>
 				<li>
 					<img src="images/setup.png" />
-					A setup window will appear. click the "next" button twice in the setup window. Click "next" for the destination as well</li>
+					A setup window will appear. Click the "Next" button twice in the setup window. Click "Next" for the destination as well.</li>
 				</li>
 
 				<input  id="step8" type="radio" name="step" />
 				<label for="step8"></label>
 				<li>
 					<img src="images/setup-finished.png" />
-					Once the installer is finished, close the installer
+					Once the installer is finished, close the installer.
 				</li>
 
 				<input  id="step9" type="radio" name="step" />
 				<label for="step9"></label>
 				<li>
 					<img src="images/run-notepad.png" />
-					Open Notepad by hitting the "windows key" on your keyboard with "r" type "notepad" click "ok".
+					<p>Open Notepad by holding the "Windows key" on your keyboard, then pushing "R."</p>
+					<p>When the dialog box opens up, type <code>notepad</code> and then click "OK".</p>
 				</li>
 
 				<input  id="step10" type="radio" name="step" />
@@ -159,9 +160,10 @@ class HelloWorld {
 				<label for="step11"></label>
 				<li>
 					<img src="images/save-file.png" />
-					Save the file to the desktop as HelloWorld.java.
+					Save the file to the desktop as <code>HelloWorld.java</code>.
 					<div class="warning fa fa-warning">
-						When saving make sure the option for "save as type" is set to "all files"
+						When saving make sure the option for "Save as type" is set to "All Files (*.*)"
+						<br>If you entered <code>HelloWorld.java</code> before change the type, ensure the name is still correct
 					</div>
 				</li>
 
@@ -169,7 +171,7 @@ class HelloWorld {
 				<label for="step12"></label>
 				<li>
 					<img src="images/open-cmd.png" />
-					Open command prompt by holding shift and right click on the Desktop. Click open command window here.
+					Open command prompt by holding shift and right clicking on the Desktop. Click "Open command window here."
 				</li>
 
 				<input  id="step13" type="radio" name="step" />
@@ -180,7 +182,7 @@ class HelloWorld {
 						<code>
 							"C:\Program Files (x86)\Java\jdk1.8.0_25\bin\javac" HelloWorld.java
 						</code>
-					to compile the code
+					to compile the code.
 				</li>
 
 				<input  id="step14" type="radio" name="step" />
@@ -191,7 +193,7 @@ class HelloWorld {
 					<code>
 						"C:\Program Files (x86)\Java\jdk1.8.0_25\bin\java" HelloWorld
 					</code>
-					to run the code
+					to run the code.
 				</li>
 
 				<input  id="step15" type="radio" name="step" />
@@ -199,7 +201,7 @@ class HelloWorld {
 				<li>
 					<img src="images/end-result.png" />
 					<p>The end result should be a single line in the terminal that says <code>Hello World!</code></p>
-					<p>Say hello back!</p>
+					<p>Congratulations! You have create and ran your first program!</p>
 				</li>
 
 				<input  id="step16" type="radio" name="step" disabled="disabled" />
@@ -208,6 +210,6 @@ class HelloWorld {
 		</main>
 	</div>
 
-	<footer>v0.0.9</footer>
+	<footer>v0.1.0</footer>
 </body>
 </html>
