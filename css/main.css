@@ -297,3 +297,11 @@ pre {
 .guide-info .warning:before, .guide-info .danger:before {
 	margin: 5px;
 }
+
+code {
+	color: #555;
+	background-color: #f9f2f4;
+	white-space: nowrap;
+	border-radius: 4px;
+	tab-size: 4;
+}
