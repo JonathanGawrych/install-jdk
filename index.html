@@ -19,6 +19,7 @@
 
 		<nav id="sidebar">
 			<ol>
+				<li><label for="step0">Guide Info</label></li>
 				<li><label for="step1">Open IE</label></li>
 				<li><label for="step2">Oracle Downloads</label></li>
 				<li><label for="step3">Accept Agreement</label></li>
@@ -55,15 +56,19 @@
 
 				<input  id="step0" type="radio" name="step" checked="checked" />
 				<label for="step0"></label>
-				<li>
-					<aside class="warning fa fa-warning">
+				<li class="guide-info">
+					<p>This guide will use images, as well as text instructions to guide you though the process.</p>
+					<p class="warning fa fa-warning">Warnings are marked in a yellow box</p>
+					<p class="danger fa fa-warning">Potential Problems are marked in a red box</p>
+					<p>Follow each step and navigate using the arrow buttons. You can also jump between steps using the navigation to the left.</p>
+					<div class="warning fa fa-warning">
 						<h4 class="requirements">Before you begin, You will need:</h4>
 						<ul>
 							<li>Computer with windows 7</li>
 							<li>An internet connection</li>
 							<li>Administrative privileges</li>
 						</ul>
-					</aside>
+					</div>
 				</li>
 
 				<input  id="step1" type="radio" name="step" />
@@ -203,6 +208,6 @@ class HelloWorld {
 		</main>
 	</div>
 
-	<footer>v0.0.6</footer>
+	<footer>v0.0.7</footer>
 </body>
 </html>

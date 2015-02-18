@@ -86,6 +86,7 @@ aside.warning {
 .requirements {
 	display: inline-block;
 	margin: 0.5em;
+	margin-left: 0;
 }
 
 .logo-image {
@@ -274,4 +275,18 @@ pre {
 
 .steps p {
 	margin: 0;	
+}
+
+.guide-info {
+	text-align: left !important;
+	padding: 4em;
+}
+
+.guide-info p {
+	margin: 0.5em 0;
+	display: block;
+}
+
+.guide-info .warning:before, .guide-info .danger:before {
+	margin: 5px;
 }
