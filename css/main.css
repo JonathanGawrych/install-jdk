@@ -53,6 +53,7 @@ aside {
 
 aside.warning {
 	margin-top: 0;
+	font-size: 0.707em;
 }
 
 .danger, .warning {
@@ -152,7 +153,7 @@ nav label:hover {
 
 ol.steps {
 	position: relative;
-	height: 25em;
+	height: 30em;
 	margin: 2em;
 	overflow: hidden;
 
@@ -164,8 +165,8 @@ ol.steps {
 
 .steps img {
 	display: block;
-	max-height: 80%;
-	max-width: 80%;
+	max-height: 75%;
+	max-width: 75%;
 	margin: 1em auto;
 }
 
