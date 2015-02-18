@@ -48,6 +48,7 @@ main {
 
 aside {
 	float: right;
+	text-align: left;
 }
 
 aside.warning {
@@ -161,10 +162,6 @@ ol.steps {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 }
 
-ol.steps li {
-	background-color: inherit;
-}
-
 .steps img {
 	display: block;
 	max-height: 80%;
@@ -252,7 +249,8 @@ ol.steps li {
 	opacity: 0.6;
 }
 
-.steps li {
+.steps > li {
+	background-color: inherit;
 	position: absolute;
 	top: 0;
 	left: 4em;
